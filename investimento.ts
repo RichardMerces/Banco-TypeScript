@@ -1,6 +1,8 @@
 export class Investimento{
-    investimento: number
+    calculo: number
+    soma: number
     mostrarInvest(){
-        console.log(`Investimento: ${this.investimento.toFixed(2)}`)
+        this.calculo = this.soma * 0.10
+        console.log(`Investimento: R$${this.calculo.toFixed(2)}`)
     }
 }
